@@ -565,6 +565,77 @@ h1 {
   border-bottom: 1px solid var(--border);
 }
 
+.results-section {
+  background: linear-gradient(180deg, var(--ivory), var(--porcelain));
+  border-top: 1px solid var(--border);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: 18px;
+}
+
+.result-card {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  background: rgba(255, 253, 248, 0.78);
+  box-shadow: 0 22px 64px rgba(20, 37, 34, 0.08);
+}
+
+.result-card-dark {
+  background: var(--teal-deep);
+  color: var(--ivory);
+}
+
+.result-media {
+  background: #fff;
+}
+
+.result-media img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.split-result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255, 253, 248, 0.38);
+}
+
+.split-result img {
+  aspect-ratio: 1 / 1;
+}
+
+.result-card figcaption {
+  padding: 20px;
+}
+
+.result-card strong,
+.result-card span {
+  display: block;
+}
+
+.result-card strong {
+  font-family: var(--display);
+  font-size: 1.45rem;
+  line-height: 1.05;
+}
+
+.result-card span {
+  color: var(--ink-soft);
+  margin-top: 7px;
+  font-size: 0.9rem;
+}
+
+.result-card-dark span {
+  color: rgba(255, 253, 248, 0.72);
+}
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -971,6 +1042,7 @@ details p {
   }
 
   .trust-grid,
+  .results-grid,
   .treatment-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1064,6 +1136,7 @@ details p {
   .hero-proof,
   .trust-grid,
   .celebrity-cards,
+  .results-grid,
   .treatment-grid,
   .footer-grid {
     grid-template-columns: 1fr;
